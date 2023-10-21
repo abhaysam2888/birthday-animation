@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-btn{
+            background-size:220%;
+            background-image:linear-gradient(120deg,transparent,transparent 50%,#8b31ff 0);
+            transition:all .3s ease-in-out;
+        }
+        #main-btn:active,#main-btn:hover{
+            background-position:100%;
+            box-shadow: 0 0 1rem #7000ff;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div style="display: flex; flex-direction: column; align-items: center; padding-top:80px;">
+        <h1 style="color: white; font-size: 4rem; text-align: center;">Welcome Shu.... age lago lo</h1>
+    <div class="text-white mt-10">
+        <button style="margin: auto; display:flex; justify-content: center; width: 100px;  height: 50px; align-items: center; outline: none; border: 2px solid #7000ff; border-radius: 5px; background-color:violet;" id="main-btn">
+            <a href="./index2.html" style="text-decoration: none; color: white; font-size: 18px; padding:20px; font-weight: bold;">
+                Suprise
+            </a>
+        </button>
+    </div>
+    <div>
+        <p style="display:none; color: red; text-align: center; font-size:30px;" id="hiddenText">Click karega toh kuch dikhega</p>
+    </div>
+    </div>
+</body>
+<script>
+    function timerText() {
+        let hiddenText = document.querySelector('#hiddenText')
+        hiddenText.style.display = 'block'
+        
+    }
+    setTimeout(timerText, 2500);
+</script>
+</html>
+
+<!--  -->
